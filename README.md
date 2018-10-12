@@ -21,4 +21,3 @@
   activative
   ```
 This is [an example](http://example.com/ "Title") inline link.
-<font color=#00ffff size=72>color=#00ffff</font>
