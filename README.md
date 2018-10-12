@@ -16,7 +16,7 @@
   *  web - django / flask
   *  desktop - tkinter /pyQT
   *  crawler - selenium / beatifulsoup
-  *  raspberry pi - opencv
+  *  raspberry pi - [opencv](https://www.facebook.com/100009153019778/videos/2101438776837869/)
   *  machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
 
 
