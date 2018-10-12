@@ -41,12 +41,18 @@
   ```
   
   * ### 執行虛擬環境
-   
-  ```sh
+  
   (windows)
+  ```sh
+  
   cd env\Scripts\
   activative
+  
+  ```
+  
   (mac/linux)
+  ```sh
+  
   source ./env/activative
   ```
 This is [an example](http://example.com/ "Title") inline link.
