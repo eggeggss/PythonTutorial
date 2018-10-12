@@ -41,10 +41,13 @@
   ```
   
   * ### 執行虛擬環境
-  * #### windows
+   
   ```sh
+  (windows)
   cd env\Scripts\
   activative
+  (mac/linux)
+  source ./env/activative
   ```
 This is [an example](http://example.com/ "Title") inline link.
 [android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
