@@ -6,7 +6,7 @@
 
 ## 2.設定虛擬環境
   * ### 安裝virtualenv
-
+  `${package.json.version}`
   ```sh
   pip3 install virtualenv env
   ```
