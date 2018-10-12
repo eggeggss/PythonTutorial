@@ -6,8 +6,8 @@
 
 ## 2.設定虛擬環境
   * ### 安裝virtualenv
- <font color=#0099ff size=7 face="黑体">color=#0099ff size=72 face="黑体"</font>
-  ```sh
+ 
+ ```sh
   pip3 install virtualenv env
   ```
   * ### 創建虛擬環境
@@ -21,3 +21,4 @@
   activative
   ```
 This is [an example](http://example.com/ "Title") inline link.
+<font color=#00ffff size=72>color=#00ffff</font>
