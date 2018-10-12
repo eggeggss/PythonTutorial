@@ -12,6 +12,9 @@
           2.runtime error
           3.GIL(使用 GIL 的解釋器也只允許同一時間執行一個執行緒)
 
+
+
+
 # 環境設定
 ## 1.安裝Python3
   * ### python3.6(https://www.python.org/downloads/release/python-362/)
