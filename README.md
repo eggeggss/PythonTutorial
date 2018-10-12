@@ -1,4 +1,4 @@
-# Python 介紹
+#(A) Python 介紹
 ## python直譯式的物件導向語言
  ### 優點
  * 快速開發,適合小型專案
@@ -22,7 +22,7 @@
 
 ***
 
-# 環境設定
+#(B) 環境設定
 ## 1.安裝Python3
   * ### python3.6(https://www.python.org/downloads/release/python-362/)
   
