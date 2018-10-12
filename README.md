@@ -14,7 +14,7 @@
   
   * ### 執行虛擬環境
   ```sh
-  cd env/Scripts
+  cd env\Scripts\
   activative
   ```
 This is [an example](http://example.com/ "Title") inline link.
