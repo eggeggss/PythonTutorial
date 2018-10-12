@@ -13,11 +13,11 @@
 
           
 ## 應用範圍
-  * ### web - django / flask
-  * ### desktop - tkinter /pyQT
-  * ### crawler - selenium / beatifulsoup
-  * ### raspberry pi - opencv
-  * ### machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
+  *  web - django / flask
+  *  desktop - tkinter /pyQT
+  *  crawler - selenium / beatifulsoup
+  *  raspberry pi - opencv
+  *  machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
 
 
 ***
