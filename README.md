@@ -20,6 +20,8 @@
   *  machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
   *  bot - line bot/telegram
   *  [iphone mdm](https://github.com/project-imas/mdm-server)
+  *  車牌辨識 - [openalpr](https://github.com/openalpr/openalpr)
+  
 
 ***
 
