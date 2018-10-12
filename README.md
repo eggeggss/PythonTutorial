@@ -41,6 +41,7 @@
   ```
   
   * ### 執行虛擬環境
+  * #### windows
   ```sh
   cd env\Scripts\
   activative
