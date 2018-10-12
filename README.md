@@ -1,18 +1,17 @@
 # Python 介紹
 ## python直譯式的物件導向語言
+ ### 優點
+ * 快速開發,適合小型專案
+ * library多
+ * 跨平台 - windows,linux,osx,[android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851) 
+ * 膠水語言-易與其他語言介接-cpython/jython/IRONpython
+ ### 缺點                  
+ * 效能差
+ * runtime error
+ * 不適合用於大型專案
+ * GIL(使用 GIL 的解釋器也只允許同一時間執行一個執行緒)
 
-* ### 優點
-           1.快速開發,適合小型專案
-           2.library多
-           3.跨平台 - windows,linux,osx, [android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
-           4.膠水語言-易與其他語言介接-cpython/jython/IRONpython
-           
-         
-* ### 缺點
-          1.效能差
-          2.runtime error
-          3.不適合用於大型專案
-          4.GIL(使用 GIL 的解釋器也只允許同一時間執行一個執行緒)
+          
 
 
 
@@ -47,3 +46,4 @@
   activative
   ```
 This is [an example](http://example.com/ "Title") inline link.
+[android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
