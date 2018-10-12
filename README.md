@@ -29,7 +29,7 @@
 ```
   * ### 下載 [visual studio code](https://code.visualstudio.com/download)
 
-## 2.設定虛擬環境
+## 2.設定虛擬環境 (目的使不同專案的環境在同一個作業系統上不互相干擾)
   * ### 安裝virtualenv
  
  ```sh
