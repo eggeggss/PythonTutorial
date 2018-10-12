@@ -7,7 +7,7 @@
  * 膠水語言-易與其他語言介接-cpython/jython/IRONpython
  ### 缺點                  
  * [效能差](https://www.cnblogs.com/savorboard/p/dotnet-benchmarks.html)
- * runtime error
+ * runtime error (no 型別檢查)
  * 不適合用於大型專案
  * GIL(使用 GIL 的解釋器也只允許同一時間執行一個執行緒)
 
