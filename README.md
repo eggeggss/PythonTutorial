@@ -12,7 +12,12 @@
  * GIL(使用 GIL 的解釋器也只允許同一時間執行一個執行緒)
 
           
-
+## 應用範圍
+  * ### web - django / flask
+  * ### desktop - tkinter /pyQT
+  * ### crawler - selenium / beatifulsoup
+  * ### raspberry pi - opencv
+  * ### machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
 
 
 ***
