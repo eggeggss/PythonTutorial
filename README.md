@@ -4,7 +4,7 @@
 * ### 優點
            1.快速開發
            2.library多
-           3.跨平台
+           3.跨平台 - windows,linux,osx,android
            4.膠水語言-易與其他語言介接-cpython/jython/IRONpython
           
 * ### 缺點
