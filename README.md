@@ -25,7 +25,8 @@
  C:\Users\luffymchd888\AppData\Local\Programs\Python\Python36;
  C:\Users\luffymchd888\AppData\Local\Programs\Python\Python36\Scripts;
 ```
-  
+  * ### 下載 [visual studio code](https://code.visualstudio.com/download)
+
 ## 2.設定虛擬環境
   * ### 安裝virtualenv
  
