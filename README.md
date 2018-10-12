@@ -4,7 +4,7 @@
 * ### 優點
            1.快速開發,適合小型專案
            2.library多
-           3.跨平台 - windows,linux,osx,[android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
+           3.跨平台 - windows,linux,osx, [android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
            4.膠水語言-易與其他語言介接-cpython/jython/IRONpython
            
          
