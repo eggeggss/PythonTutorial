@@ -18,7 +18,7 @@
   *  web crawler - selenium / beatifulsoup + requests
   *  raspberry pi - [opencv](https://www.facebook.com/100009153019778/videos/2101438776837869/)
   *  machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
-
+  *  bot - line bot/telegram
 
 ***
 
