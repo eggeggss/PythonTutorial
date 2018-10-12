@@ -14,7 +14,7 @@
 
 
 
-
++
 # 環境設定
 ## 1.安裝Python3
   * ### python3.6(https://www.python.org/downloads/release/python-362/)
