@@ -1,7 +1,10 @@
 
 
 # 環境設定
-## 1.設定虛擬環境
+## 1.安裝Python3
+  * ### python3.6(https://www.python.org/downloads/release/python-362/)
+
+## 2.設定虛擬環境
   * ### 安裝virtualenv
 
   ```sh
