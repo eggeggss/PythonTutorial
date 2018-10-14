@@ -34,7 +34,7 @@
 ## 1.安裝Python3
   * ### [python3.6](https://www.python.org/downloads/release/python-362/)
   
-  * ### 設定環境變數
+  * ### 設定環境變數(Windows)
 ```sh      
  C:\Users\luffymchd888\AppData\Local\Programs\Python\Python36;
  C:\Users\luffymchd888\AppData\Local\Programs\Python\Python36\Scripts;
