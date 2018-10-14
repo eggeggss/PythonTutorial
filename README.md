@@ -23,7 +23,7 @@
 ## 應用範圍
   *  [iphone mdm](https://youtu.be/G-C-kimmPok?t=47)
   *  web - django / flask
-  *  bot - [line bot](https://github.com/line/line-bot-sdk-python)/telegram (訂便當)
+  *  bot - [line bot](https://github.com/line/line-bot-sdk-python)/telegram (訂便當line bot)
   *  desktop - tkinter /pyQT
   *  web crawler - selenium / [beatifulsoup+requests](https://dotblogs.com.tw/eggstudio/2017/12/28/python1)
   *  raspberry pi - [opencv](https://www.facebook.com/100009153019778/videos/2101438776837869/)
