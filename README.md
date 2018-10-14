@@ -106,6 +106,16 @@
   print(name)
   
   ```
+  >>字串由list組合而成
+  ```sh
+  name="Roger"
+  print(name[0])
+  #Result=> R
+  print(name[1])
+  #Result=>o
+  ```
+  
+  
  
 
 This is [an example](http://example.com/ "Title") inline link.
