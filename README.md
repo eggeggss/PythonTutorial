@@ -12,7 +12,7 @@
  * 跨平台 - windows,linux,osx,[android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851) 
  * 膠水語言-易與其他語言介接-cpython/jython/IRONpython
  ### 缺點                  
- * [效能差](https://www.cnblogs.com/savorboard/p/dotnet-benchmarks.html)
+ * [效能差](https://www.cnblogs.com/savorboard/p/dotnet-benchmarks.html) [?](http://python.jobbole.com/87814/)
  * runtime error (型別檢查)
  * GIL(使用 GIL 的解釋器也只允許同一時間執行一個執行緒)
 
