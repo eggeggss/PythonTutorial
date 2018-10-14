@@ -8,7 +8,7 @@
  Python 3.0於2008年12月3日發布，此版不完全相容之前的Python原始碼。不過，很多新特性後來也被移植到舊的Python 2.6/2.7版本。
 
  * ### 優點
- ** 快速開發,適合小型專案
+ > * 快速開發,適合小型專案
  * library多
  * open source
  * 豐富的科學分析package ex.numpy,scipy,matplotlib,axes3d
