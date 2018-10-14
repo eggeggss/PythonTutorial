@@ -77,24 +77,24 @@
 # (C)變數宣告
   * ### 數值資料型態
    ```sh
-      num=10
-      print(num)
+  num=10
+  print(num)
    ```
    
    ```sh
-      num=10.01
-      print(num)
+  num=10.01
+  print(num)
    ```
   * ### 布林
   
   ```sh
-      flag=True
-      print(flag)
+  flag=True
+  print(flag)
   ```
   
   ```sh
-      flag=False
-      print(flag)
+  flag=False
+  print(flag)
   ```
   
   * ### 字串資料型態
