@@ -27,6 +27,7 @@
   *  desktop - tkinter /pyQT
   *  web crawler - selenium / [beatifulsoup+requests](https://dotblogs.com.tw/eggstudio/2017/12/28/python1)
   *  raspberry pi - [opencv](https://www.facebook.com/100009153019778/videos/2101438776837869/)
+  *  大數據分析 -  Spark 分散式處理巨量資料，加速分析流程，縮短 AI 訓練的時間.
   *  車牌辨識 - [openalpr](https://github.com/openalpr/openalpr)
   *  machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
   
