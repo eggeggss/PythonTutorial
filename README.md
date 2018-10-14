@@ -20,11 +20,11 @@
 ## 應用範圍
   *  [iphone mdm](https://youtu.be/G-C-kimmPok?t=47)
   *  web - django / flask
+  *  bot - [line bot](https://github.com/line/line-bot-sdk-python)/telegram
   *  desktop - tkinter /pyQT
   *  web crawler - selenium / beatifulsoup + requests
   *  raspberry pi - [opencv](https://www.facebook.com/100009153019778/videos/2101438776837869/)
   *  machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
-  *  bot - [line bot](https://github.com/line/line-bot-sdk-python)/telegram
   *  車牌辨識 - [openalpr](https://github.com/openalpr/openalpr)
   
 
