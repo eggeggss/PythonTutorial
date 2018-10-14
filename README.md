@@ -31,12 +31,6 @@
   *  車牌辨識 - [openalpr](https://github.com/openalpr/openalpr)
   *  machine learning/deep learning - scikit-learn / tensortflow / keras /pytorch
   
-## TOIBE排名
- 
- ![alt tag](https://raw.githubusercontent.com/eggeggss/PythonTutorial/master/1531208571886689.png)
-   
-
-
 ***
 
 # (B)環境設定
