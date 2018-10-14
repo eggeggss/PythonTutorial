@@ -107,13 +107,21 @@
   print(name)
   
   ```
-  >>字串由list組合而成
+  >>字串本身就是list組合
   ```sh
   name="Roger"
   print(name[0])
-  #Result=> R
+  ```
+  
+  ```sh
+  name="Roger"
   print(name[1])
-  #Result=>o
+  ```
+  
+  >>字串格式化
+  ```sh
+  age=20
+  print('my name is roger ,I am {} years old.'.format(age)) 
   ```
   
   
