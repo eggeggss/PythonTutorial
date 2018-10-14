@@ -98,7 +98,7 @@
   ```
   
   * ### 字串資料型態
-  >>用 
+  >>用 " or '表示
   ```sh
   name="Hello world"
   print(name)
