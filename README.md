@@ -99,7 +99,11 @@
   
   * ### 字串資料型態
   ```sh
-    
+  name="Hello world"
+  print(name)
+  
+  name=' "Hello world" '
+  print(name)
   
   ```
  
