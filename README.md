@@ -122,6 +122,7 @@
   ```sh
   age=20
   print('my name is roger ,I am {} years old.'.format(age)) 
+  print('my name is roger,I am',age,'years old.')
   ```
   
   
