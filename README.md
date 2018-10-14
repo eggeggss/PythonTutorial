@@ -68,14 +68,14 @@
   ```sh
   
   cd env\Scripts\
-  activative
+  activate
   
   ```
   
   (mac/linux)
   ```sh
   
-  source ./env/activative
+  source ./env/activate
   ```
 
 ***
