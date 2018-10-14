@@ -68,5 +68,34 @@
   
   source ./env/activative
   ```
+
+***
+
+# (C)變數宣告
+  * ### 數值資料型態
+   ```sh
+      num=10
+      print(num)
+   ```
+   
+   ```sh
+      num=10.01
+      print(num)
+   ```
+  * ### 布林
+  
+  ```sh
+      flag=True
+      print(flag)
+  ```
+  
+  ```sh
+      flag=False
+      print(flag)
+  ```
+  
+  * ### 字串資料型態
+  
+
 This is [an example](http://example.com/ "Title") inline link.
 [android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
