@@ -83,7 +83,8 @@
 ***
 
 # (C)變數宣告
-  * ### 數值資料型態
+  * ##數值資料型態
+  * ### Integer/float
    ```sh
   num=10
   print(num)
