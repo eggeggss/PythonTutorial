@@ -152,14 +152,15 @@
   * ## 群集資料型態
   ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/immutable.png?raw=true)
   
-  >>list => [] 
+  >>>list => [] 
   
-  >>tuple => ()  
+  >>>tuple => ()  
   
-  >>set => {"a","b"} 
+  >>>set => {"a","b"} 
   
-  >>dictionary =>{"a":1,"b":2} 
+  >>>dictionary =>{"a":1,"b":2} 
   
+  >> ### List
 
 This is [an example](http://example.com/ "Title") inline link.
 [android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
