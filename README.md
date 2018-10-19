@@ -149,7 +149,7 @@
   print('my name is roger,I am',age,'years old.')
   ```
 
-  * ## 數值資料型態
+  * ## 群集資料型態
   
  
 
