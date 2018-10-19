@@ -150,7 +150,7 @@
   ```
 
   * ## 群集資料型態
-  ![alt tag](https://github.com/eggeggss/FightFly/blob/master/12月-10-2016%2000-51-14plant.gif)
+  ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/immutable.png?raw=true)
  
  
 
