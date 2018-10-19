@@ -84,16 +84,31 @@
 
 # (C)變數宣告
   * ## 數值資料型態
-  * ### Integer/float
+  * ### Integer
    ```sh
   num=10
   print(num)
    ```
-   
+  * ### float 小數(不精確)   
    ```sh
   num=10.01
   print(num)
    ```
+  * ### Decimal 小數(精確,速度慢)
+  
+  ```sh
+   c=0.3
+   d=0.9
+   c*3==d
+   >>>>False
+  
+   import decimal
+   a=decimal.Decimal('0.3')
+   b=decimal.Decimal('0.9')
+   a*3==d
+   >>>>True
+  ```
+  
   * ### 布林
   
   ```sh
@@ -107,7 +122,7 @@
   ```
   
   * ### 字串資料型態
-  >>用 " or '表示
+  >>一連串單字組成,用 " or '表示
   ```sh
   name="Hello world"
   print(name)
@@ -133,7 +148,8 @@
   print('my name is roger ,I am {} years old.'.format(age)) 
   print('my name is roger,I am',age,'years old.')
   ```
-  
+
+  * ## 數值資料型態
   
  
 
