@@ -165,8 +165,16 @@
   
   * ### Set
   不重複的集合
+  ```sh
+  s=set()
+  s.add("A") #新增一集合
+  s.discard("A") #刪除某元素
+  s.remove("A")  #刪除某元素 不存在會throw error
+  s.union(t) 聯集2個set
+  ```
   
-
+  * ### Dictionary
+  
 This is [an example](http://example.com/ "Title") inline link.
 [android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
 
