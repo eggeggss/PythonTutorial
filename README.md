@@ -125,22 +125,18 @@
   >>一連串單字組成,用 " or '表示
   ```sh
   name="Hello world"
-  print(name)
+  name
   
   name=' "Hello world" '
-  print(name)
+  name
   
   ```
   >>字串本身就是list組合
   ```sh
   name="Roger"
-  print(name[0])
+  name[0]
   ```
   
-  ```sh
-  name="Roger"
-  print(name[1])
-  ```
   
   >>字串格式化
   ```sh
@@ -160,7 +156,16 @@
   
   >>>dictionary =>{"a":1,"b":2} 
   
-  >> ### List
+  * ### List 
+  list are mutable sequences,可放不同型態的物件,但建議放相同型態物件
+  
+  
+  * ### Tuple
+  與List一樣,差異是immutable,只能取資料
+  
+  * ### Set
+  不重複的集合
+  
 
 This is [an example](http://example.com/ "Title") inline link.
 [android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
