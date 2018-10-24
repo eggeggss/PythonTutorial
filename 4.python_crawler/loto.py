@@ -128,7 +128,7 @@ def DrawBar_Max():
    plt.grid(True)
    plt.show()
 
-#冷門統計
+#冷門統計1
 def DrawBar_Min():
    global group_dict
    
