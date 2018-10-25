@@ -114,7 +114,7 @@ def DrawPie_Max():
     fig.set_figwidth(300)
     fig.set_figheight(300)
     plt.pie(np_total , labels = loto_range,autopct='%1.1f%%')
-    plt.axis('equal')
+    #plt.axis('equal')
     plt.show()
 
 #熱門統計

@@ -122,8 +122,8 @@ def DrawPie_Max():
     fig = plt.figure("熱門出現次數圓餅圖")
     fig.set_figwidth(300)
     fig.set_figheight(300)
-    plt.pie(np_total , labels = loto_range,autopct='%1.1f%%')
-    plt.axis('equal')
+    plt.pie(np_total , labels = first_range,autopct='%1.1f%%')
+    #plt.axis('equal')
     plt.show()
 
 #熱門統計
@@ -176,11 +176,11 @@ if __name__=='__main__':
 
     Initial()
     #1~10
-    for month in range(10,11):
+    for month in range(5,11):
         print("抓取第:",month,"個月的資料")
         html=ExcuteCrawler('107',str(month))
         Extract(html)
         time.sleep(3)
 
     DrawBar_Max()
-    
+    #DrawPie_Max()
