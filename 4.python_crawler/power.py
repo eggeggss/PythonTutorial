@@ -4,6 +4,7 @@ import time
 import matplotlib.pyplot as plt
 import numpy as np
 import operator
+import os
 url='http://www.taiwanlottery.com.tw/lotto/superlotto638/history.aspx'
 
 EVENTVALIDATION='vJqePwdOqHzhsgkg1nXQ9HN3jTFSxuHcoTiq+g+WoXBDxKHeNRvyfc5oucC8fVrvFN8cJcZcg66EoIdkOR7Rv84m3NseshQdgrJL/8ujnAtEJOy5159fAMV9RUEhlovQjtT5HrX4QEXCLTgMf57cvwZWSSKTGAncjkYCC1TXi8vtsrRsun7Szb/1nxBru/41RGWeSMCrKJ4bJQrTFFiiOA2YgpuYPRFDG7E7rtX7KFiQL75un2t2iTnHY2FRQZb8PcdRrQzvLaaY9F0UIUmvIW1vc9cYoyCmV5kpnW6kaWhFM2AGdTotbS7e0txeajqx/PsisaIZO4vwsyDidRhvE0/UyAq+6IrIbFgoOSFpSsLB/dc5yuTtnsNS96uzcJ4Z7lzqSJavKjd49m8BScVZzq6D8ONGl9KEkg/rxtwf/+lOE6do+tkD7lI9mHFujPK4n3eFjUkYiUK3CpfC3jOnAZaRxl/IzjgehBMJm1WTvLJgicHe2ZOJWGgt8zIVhGRyEzoL/yModEwT4A0NxPtC4peafW7yaop32Luc8xILxMlETgnhoSqdf8qOS3hLMMnrtpjVdgUHy2eQJbvE/Z3EpNpWo5KfFOQ+SrjdjX1Hib2PCdHAi15Z3q0mye/9QrwkAdUe27an5wOWIrk84Xvs9EpArWHDTBFrWrkUavlSzzUEOZ49Wo/bycBqykZSLy/S9FKi0TDY4Yb8WE3/LMwommyoi7CwawB6JzifkIViy1G7t+ZtfNxkZyKHvq6SRnS2Vxk/ZetrWkqh6zIyDGbHgoR8upXdyhbICPlSLiZSlbLeqmQslIPVMUx9iFARsmZGg+R0jA=='
@@ -109,6 +110,8 @@ def Extract(text):
               SpecialGroupData(splitstr[8])       
               #下一行在end+9
               start=end+9
+
+    os.system('rm tmp.csv')
     
 
 
