@@ -5,7 +5,7 @@
       do..something
    elif (條件2):
       do..something
-   else:
+   else :
       do..something
       
 ```
