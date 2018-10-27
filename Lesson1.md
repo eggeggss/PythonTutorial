@@ -147,6 +147,12 @@
     b.isdigit()
   ```
   
+  ```sh
+    #判斷前幾個字是否為abc
+    s1="abcdedf"
+    s1.startswith("abc")
+  
+  ```
   
   
   >>字串格式化
