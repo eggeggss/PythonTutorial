@@ -27,7 +27,7 @@ while (True):
    do...something
    if (條件一):
       break
-   else:
+   else :
       continue
 
 ```
