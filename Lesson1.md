@@ -32,7 +32,7 @@
   *  [iphone mdm](https://youtu.be/G-C-kimmPok?t=47)
   *  web - django / flask
   *  line bot - [django](https://github.com/Lee-W/line_echobot)/[flask](https://github.com/line/line-bot-sdk-python) (訂便當line bot)
-  *  desktop - [tkinter](https://github.com/eggeggss/a-face-recognition-wrapper-system) /pyQT
+  *  desktop - tkinter /pyQT
   *  web crawler - selenium / [beatifulsoup+requests](https://dotblogs.com.tw/eggstudio/2017/12/28/python1)
   *  raspberry pi - [opencv](https://www.facebook.com/100009153019778/videos/2101438776837869/)
   *  車牌辨識 - [openalpr](https://github.com/openalpr/openalpr)
