@@ -158,7 +158,28 @@
   
   * ### List 
   list are mutable sequences,可放不同型態的物件,但建議放相同型態物件
+  ```sh
+  mylist=list()
+  mylist=['A','B',1]
   
+  #設值
+  mylist.append('C')
+  
+  #取出最後一個值,該值從陣列消失
+  mylist.pop()
+  
+  #取出第一個值,該值從陣列消失
+  mylist.pop(0)
+  
+  #排序
+  mylist.sort()
+  
+  #陣列反轉
+  mylist.reverse()
+  
+  #印
+  
+  ```
   
   * ### Tuple
   與List一樣,差異是immutable,只能取資料
