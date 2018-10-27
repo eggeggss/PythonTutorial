@@ -168,12 +168,32 @@
   ```sh
   s=set()
   s.add("A") #新增一集合
-  s.discard("A") #刪除某元素
+  s.discard("A") #刪除某元素 不會throw error
   s.remove("A")  #刪除某元素 不存在會throw error
   s.union(t) 聯集2個set
   ```
   
   * ### Dictionary
+  由一組匹配的key跟value所組成的集合
+  ```sh
+  mydict=dic()
+  #直接設值
+  mydict={'name':'John','age':20,}
+  
+  #設值
+  mydic["name"]="John"
+  
+  #取值,若找不到會throw error
+  name=mydic["name"]
+  
+  #取值,若找不到會回傳None
+  name=mydic.get("name")
+  
+  #將key轉成list
+  mydictkeys=list(mydic.keys())
+  mydictvalues=list(mydic.values())
+  
+  ```
   
 This is [an example](http://example.com/ "Title") inline link.
 [android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
