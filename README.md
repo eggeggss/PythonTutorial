@@ -190,9 +190,14 @@
   
   * ### Tuple
   與List一樣,差異是immutable,只能取資料
+  優點效率好,保護資料
   
   ```sh
+  #設值
+  mytuple=('A','B',1)
   
+  #取值
+  mytuple[0]
   
   ```
   
