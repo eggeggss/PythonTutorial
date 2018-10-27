@@ -232,7 +232,4 @@
   mydictvalues=list(mydic.values())
   
   ```
-  
-This is [an example](http://example.com/ "Title") inline link.
-[android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
 
