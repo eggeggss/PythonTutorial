@@ -31,3 +31,14 @@ while (True):
       continue
 
 ```
+# (F)函數
+要先有def以後才可以開始使用
+```sh
+
+def addTwoNumber(number1,number2):
+    return number+number2
+
+
+
+```
+
