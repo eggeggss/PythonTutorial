@@ -26,6 +26,10 @@
  > * [效能差](https://www.cnblogs.com/savorboard/p/dotnet-benchmarks.html) [?](http://python.jobbole.com/87814/)
  > * runtime error (型別檢查)
  > * GIL(使用 GIL 的解釋器也只允許同一時間執行一個執行緒)
+     p.s所有在直譯器中的 C 程式碼都必須要在執行 Python 時握著這把鎖。
+        作者首先以這種方式建構 Python，因為它很簡單。
+        並且，每次從 CPython 移除 GIL的嘗試都讓單執行緒的程式碼效能降低，而無法從多執行緒中獲益。
+        GIL 對程式所造成的影響簡單到你可以在手背上寫下這個原則：「當有一個執行緒在執行 Python，其他 N 個執行緒都在睡覺或是等待 I/O」。
 
           
 ## 應用範圍
