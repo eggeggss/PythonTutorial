@@ -177,12 +177,24 @@
   #陣列反轉
   mylist.reverse()
   
-  #印
+  #印前面2個元素
+  mylist[:2]
+  
+  #印陣列第2到最後
+  mylist[2:]
+  
+  #印倒數2個元素
+  mylist[-2:]
   
   ```
   
   * ### Tuple
   與List一樣,差異是immutable,只能取資料
+  
+  ```sh
+  
+  
+  ```
   
   * ### Set
   不重複的集合
