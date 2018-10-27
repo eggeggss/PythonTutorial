@@ -57,4 +57,6 @@ def calculateScore(**kwarg):
 calculateScore(math=100,english=90)
 
 ```
+# (G)模塊
+
 
