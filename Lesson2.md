@@ -23,10 +23,9 @@
 for i in range(1,10):
    print(i)
 
-#跳2個印
-nlist=range(1,101):
-
-for i in nlist[::2]:
+#1~100跳2個印
+#range(起始,結束-1,間隔)
+for i in range(1:101:2):
     print(i)
 
 #while回圈
