@@ -59,4 +59,8 @@ calculateScore(math=100,english=90)
 ```
 # (G)模塊
 
+# (H)物件導向
+    ##繼承
+    ##多型
+    ##封裝
 
