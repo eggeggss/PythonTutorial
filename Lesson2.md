@@ -39,7 +39,7 @@ while (True):
 def addTwoNumber(number1,number2):
     return number+number2
 
-#不定參數的寫法
+#不定參數相加
 def addAnyNumber(*arg):
     total=0
     for number in arg:
