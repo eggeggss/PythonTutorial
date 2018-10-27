@@ -35,10 +35,17 @@ while (True):
 要先有def以後才可以開始使用
 ```sh
 
+#2個參數相加
 def addTwoNumber(number1,number2):
     return number+number2
 
-
-
+#不定參數的寫法
+def addAnyNumber(*arg):
+    total=0
+    for number in arg:
+        total=total+number
+    return total
+    
+    
 ```
 
