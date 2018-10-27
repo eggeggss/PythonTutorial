@@ -258,6 +258,11 @@
  
   #清除字典
   mydic.clear()
+
+  #印出字典內容
+  for key,value in mydic.items():
+      print("key:",key,"value:",value)
+
  
   ```
 
