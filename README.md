@@ -125,10 +125,10 @@
   >>一連串單字組成,用 " or '表示
   ```sh
   name="Hello world"
-  name
+ 
   
   name=' "Hello world" '
-  name
+ 
   
   ```
   >>字串本身就是list組合
