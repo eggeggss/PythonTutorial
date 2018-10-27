@@ -12,6 +12,22 @@
 
 # (E)迴圈
 ```sh
+#印出1~9
+for i in range(1,10):
+   print(i)
 
+#跳2個印
+nlist=range(1,101):
+
+for i in nlist[::2]:
+    print(i)
+
+#while回圈
+while (True):
+   do...something
+   if (條件一):
+      break
+   else:
+      continue
 
 ```
