@@ -88,6 +88,7 @@
   * ## 數值資料型態
   
   - Integer
+  
    ```sh
   num=10
   print(num)
