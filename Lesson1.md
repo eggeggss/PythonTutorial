@@ -130,7 +130,6 @@
   ```sh
   name="Hello world"
  
-  
   name=' "Hello world" '
  
   
@@ -139,13 +138,26 @@
   ```sh
   name="Roger"
   name[0]
+  
+  
+  #判斷字串字串是否為數字
+    a="123"
+    b="abc" 
+    a.isdigit()
+    b.isdigit()
   ```
+  
   
   
   >>字串格式化
   ```sh
+  
   age=20
-  print('my name is roger ,I am {} years old.'.format(age)) 
+  
+  name="roger"
+  
+  print('my name is {} ,I am {} years old.'.format(name,age)) 
+  
   print('my name is roger,I am',age,'years old.')
   ```
 
