@@ -76,6 +76,5 @@ calculateScore(math=100,english=90)
     ## 多型
     ## 封裝
     
-# (K)爬蟲
 
     
