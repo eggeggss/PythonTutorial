@@ -159,7 +159,7 @@
   
   >>>dictionary =>{"a":1,"b":2} 
   
-  * ### List 
+  * ### List (串列)
   list are mutable sequences,可放不同型態的物件,但建議放相同型態物件
   ```sh
   mylist=list()
@@ -210,7 +210,7 @@
   
   ```
   
-  * ### Tuple
+  * ### Tuple (元組)
   與List一樣,差異是immutable,只能取資料
   優點效率好,保護資料
   
@@ -223,7 +223,7 @@
   
   ```
   
-  * ### Set
+  * ### Set (集合)
   不重複的集合
   ```sh
   s=set()
@@ -235,9 +235,10 @@
   
   ```
   
-  * ### Dictionary
+  * ### Dictionary (字典)
   由一組匹配的key跟value所組成的集合
   ```sh
+ 
   mydict=dic()
   #直接設值
   mydict={'name':'John','age':20,}
@@ -254,6 +255,9 @@
   #將key轉成list
   mydictkeys=list(mydic.keys())
   mydictvalues=list(mydic.values())
-  
+ 
+  #清除字典
+  mydic.clear()
+ 
   ```
 
