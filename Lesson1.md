@@ -83,8 +83,11 @@
 ***
 
 # (C)變數宣告
+  ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/immutable.png?raw=true)
+  
   * ## 數值資料型態
-  * ### Integer
+  
+  - Integer
    ```sh
   num=10
   print(num)
@@ -146,7 +149,6 @@
   ```
 
   * ## 群集資料型態
-  ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/immutable.png?raw=true)
   
   >>>list => [] 
   
@@ -209,6 +211,8 @@
   s.discard("A") #刪除某元素 不會throw error
   s.remove("A")  #刪除某元素 不存在會throw error
   s.union(t) 聯集2個set
+  s.intersection(t)
+  
   ```
   
   * ### Dictionary
