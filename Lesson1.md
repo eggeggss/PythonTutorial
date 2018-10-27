@@ -87,7 +87,7 @@
   
   * ## 數值資料型態
   
-  - Integer
+  * ### Integer
   
    ```sh
   num=10
@@ -188,6 +188,25 @@
   
   #印倒數2個元素
   mylist[-2:]
+  
+  ```
+  
+  練習
+  設計一個成績輸入的程式,學生成績輸入串列元素,如果輸入-1程式結束,並顯示總成績與平均
+  
+  ```sh
+  score=[]
+  total=inscore=0
+  while (inscore !=-1):
+      inscore=int(input("請輸入成績:"))
+      score.append(inscore)
+      
+  for i in score:
+     total=total+1
+  
+  average=total/ (len(score)-1)
+  
+  print('總成績:{} , 平均 {}',total,average)
   
   ```
   
