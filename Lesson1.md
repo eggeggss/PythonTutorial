@@ -84,7 +84,17 @@
   source ./env/activate
   ```
 
+
+  * ### python的規定
+  單行註解使用#
+  多行註解使用'''
+
+  使用縮排當作程式碼區塊
+
 ***
+
+  
+
 
 # (C)變數宣告
   ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/immutable.png?raw=true)
