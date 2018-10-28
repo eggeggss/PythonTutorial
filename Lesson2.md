@@ -76,8 +76,19 @@ def calculateScore(**kwarg):
 
 calculateScore(math=100,english=90)
 
+
+#自定義函式+預設值
+#一開始有預設值,後面參數都要加預設值
+def Sum(a=10,b=1)
+    print(a+b)
+  
+#不按參數順序呼叫,必須使用參數名稱=值
+Sum(b=2)
+
 ```
 # (G)模塊
+
+
 
 # (H)檔案
 
