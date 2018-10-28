@@ -94,7 +94,16 @@
 ***
 
   
+# 運算式
 
+ ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/算術運算子.png?raw=true)
+  
+
+ ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/關係運算子.png?raw=true)
+  
+  
+ ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/邏輯運算子.png?raw=true)
+  
 
 # (C)變數宣告
   ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/immutable.png?raw=true)
