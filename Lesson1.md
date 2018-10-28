@@ -178,13 +178,16 @@
 
   * ## 群集資料型態
   
-  >>>list => [] 
+  ```sh
+  list  [] 
   
-  >>>tuple => ()  
+  tuple  ()  
   
-  >>>set => {"a","b"} 
+  set  {"a","b"} 
   
-  >>>dictionary =>{"a":1,"b":2} 
+  dictionary {"a":1,"b":2} 
+  
+  ```
   
   * ### List (串列)
   list are mutable sequences,可放不同型態的物件,但建議放相同型態物件
