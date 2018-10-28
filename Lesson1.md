@@ -95,12 +95,10 @@
   
    ```sh
   num=10
-  print(num)
    ```
   * ### float 小數(不精確)   
    ```sh
   num=10.01
-  print(num)
    ```
   * ### Decimal 小數(精確,速度慢)
   
@@ -121,13 +119,10 @@
   
   ```sh
   flag=True
-  print(flag)
+  
+  flag=False
   ```
   
-  ```sh
-  flag=False
-  print(flag)
-  ```
   
   * ### 字串資料型態
   >>一連串單字組成,用 " or '表示
