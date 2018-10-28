@@ -249,10 +249,15 @@
   不重複的集合
   ```sh
   s=set()
+  
   s.add("A") #新增一集合
+  
   s.discard("A") #刪除某元素 不會throw error
+  
   s.remove("A")  #刪除某元素 不存在會throw error
+  
   s.union(t) 聯集2個set
+  
   s.intersection(t)
   
   ```
