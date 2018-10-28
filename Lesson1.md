@@ -96,12 +96,13 @@
   
 # 運算式
 
+ 算術運算子的使用方式
  ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/算術運算子.png?raw=true)
   
-
+ 關係運算子的使用方式
  ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/關係運算子.png?raw=true)
   
-  
+ 邏輯運算子的使用方式 
  ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/邏輯運算子.png?raw=true)
   
 
@@ -110,16 +111,16 @@
   
   * ## 數值資料型態
   
-  * ### Integer
+  ### Integer
   
    ```sh
   num=10
    ```
-  * ### float 小數(不精確)   
+  ### float 小數(不精確)   
    ```sh
   num=10.01
    ```
-  * ### Decimal 小數(精確,速度慢)
+  ### Decimal 小數(精確,速度慢)
   
   ```sh
    c=0.3
@@ -134,7 +135,7 @@
    >>>>True
   ```
   
-  * ### 布林
+  ### 布林
   
   ```sh
   flag=True
@@ -143,7 +144,7 @@
   ```
   
   
-  * ### 字串資料型態
+  ### 字串資料型態
   >>一連串單字組成,用 " or '表示
   ```sh
   name="Hello world"
@@ -198,7 +199,7 @@
   
   ```
   
-  * ### List (串列)
+  ### List (串列)
   list are mutable sequences,可放不同型態的物件,但建議放相同型態物件
   ```sh
   mylist=list()
@@ -249,7 +250,7 @@
   
   ```
   
-  * ### Tuple (元組)
+  ### Tuple (元組)
   與List一樣,差異是immutable,只能取資料
   優點效率好,保護資料
   
@@ -262,7 +263,7 @@
   
   ```
   
-  * ### Set (集合)
+  ### Set (集合)
   不重複的集合
   ```sh
   s=set()
@@ -279,7 +280,7 @@
   
   ```
   
-  * ### Dictionary (字典)
+  ### Dictionary (字典)
   由一組匹配的key跟value所組成的集合
   ```sh
  
