@@ -59,20 +59,23 @@ while True:
 def addTwoNumber(number1,number2):
     return number+number2
 
+
 #不定參數相加 (*是陣列)
 def addAnyNumber(*arg):
     total=0
     for number in arg:
         total=total+number
     return total
-    
-addAnyNumber(1,2,3,4,5,6,7...)
+
+
+addAnyNumber(1,2,3,4,5,6,7)
 
 
 #不定參數用法2(**是dictionary)
 def calculateScore(**kwarg):
     print('英文成績是:',kwarg['english'])
     print('數學成績是:',kwarg['math'])
+
 
 calculateScore(math=100,english=90)
 
