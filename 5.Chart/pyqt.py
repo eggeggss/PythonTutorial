@@ -15,7 +15,7 @@ p.setLabel(axis='bottom', text='y')
 p.setTitle('demo graph')
 p.addLegend()
 
-
+#test
 curve1=p.plot(pen='r',name='y1')
 time_serial=0
 last_time=0
