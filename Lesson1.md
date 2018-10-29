@@ -26,13 +26,17 @@
  > * [效能差](https://www.cnblogs.com/savorboard/p/dotnet-benchmarks.html) [?](http://python.jobbole.com/87814/)
  > * runtime error (型別檢查)
  > * GIL(使用 GIL 的解釋器也只允許同一時間執行一個執行緒)
+        所有在直譯器中的 C 程式碼都必須要在執行 Python 時握著這把鎖。
+        作者首先以這種方式建構 Python，因為它很簡單。
+        並且，每次從 CPython 移除 GIL的嘗試都讓單執行緒的程式碼效能降低，而無法從多執行緒中獲益。
+        GIL 對程式所造成的影響簡單到你可以在手背上寫下這個原則：「當有一個執行緒在執行 Python，其他 N 個執行緒都在睡覺或是等待 I/O」。
 
           
 ## 應用範圍
   *  [iphone mdm](https://youtu.be/G-C-kimmPok?t=47)
   *  web - django / flask
   *  line bot - [django](https://github.com/Lee-W/line_echobot)/[flask](https://github.com/line/line-bot-sdk-python) (訂便當line bot)
-  *  desktop - [tkinter](https://github.com/eggeggss/a-face-recognition-wrapper-system) /pyQT
+  *  desktop - tkinter /pyQT
   *  web crawler - selenium / [beatifulsoup+requests](https://dotblogs.com.tw/eggstudio/2017/12/28/python1)
   *  raspberry pi - [opencv](https://www.facebook.com/100009153019778/videos/2101438776837869/)
   *  車牌辨識 - [openalpr](https://github.com/openalpr/openalpr)
@@ -80,21 +84,43 @@
   source ./env/activate
   ```
 
+
+  * ### python的規定
+  單行註解使用#
+  多行註解使用'''
+
+  使用縮排當作程式碼區塊
+
 ***
 
+  
+# 運算式
+
+ 算術運算子的使用方式
+ ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/算術運算子.png?raw=true)
+  
+ 關係運算子的使用方式
+ ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/關係運算子.png?raw=true)
+  
+ 邏輯運算子的使用方式 
+ ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/邏輯運算子.png?raw=true)
+  
+
 # (C)變數宣告
+  ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/immutable.png?raw=true)
+  
   * ## 數值資料型態
-  * ### Integer
+  
+  ### Integer
+  
    ```sh
   num=10
-  print(num)
    ```
-  * ### float 小數(不精確)   
+  ### float 小數(不精確)   
    ```sh
   num=10.01
-  print(num)
    ```
-  * ### Decimal 小數(精確,速度慢)
+  ### Decimal 小數(精確,速度慢)
   
   ```sh
    c=0.3
@@ -109,72 +135,179 @@
    >>>>True
   ```
   
-  * ### 布林
+  ### 布林
   
   ```sh
   flag=True
-  print(flag)
-  ```
   
-  ```sh
   flag=False
-  print(flag)
   ```
   
-  * ### 字串資料型態
+  
+  ### 字串資料型態
   >>一連串單字組成,用 " or '表示
   ```sh
   name="Hello world"
-  name
-  
+ 
   name=' "Hello world" '
-  name
+ 
   
   ```
   >>字串本身就是list組合
   ```sh
   name="Roger"
   name[0]
+  
+  
+  #判斷字串字串是否為數字
+    a="123"
+    b="abc" 
+    a.isdigit()
+    b.isdigit()
+  ```
+  
+  ```sh
+    #判斷前幾個字是否為abc
+    s1="abcdedf"
+    s1.startswith("abc")
+  
   ```
   
   
   >>字串格式化
   ```sh
+  
   age=20
-  print('my name is roger ,I am {} years old.'.format(age)) 
+  
+  name="roger"
+  
+  print('my name is {} ,I am {} years old.'.format(name,age)) 
+  
   print('my name is roger,I am',age,'years old.')
   ```
 
   * ## 群集資料型態
-  ![alt tag](https://github.com/eggeggss/PythonTutorial/blob/master/immutable.png?raw=true)
   
-  >>>list => [] 
+  ```sh
+  list  [] 
   
-  >>>tuple => ()  
+  tuple  ()  
   
-  >>>set => {"a","b"} 
+  set  {"a","b"} 
   
-  >>>dictionary =>{"a":1,"b":2} 
+  dictionary {"a":1,"b":2} 
   
-  * ### List 
+  ```
+  
+  ### List (串列)
   list are mutable sequences,可放不同型態的物件,但建議放相同型態物件
+  ```sh
+  mylist=list()
+  mylist=['A','B',1]
   
+  #設值
+  mylist.append('C')
   
-  * ### Tuple
+  #取出最後一個值,該值從陣列消失
+  mylist.pop()
+  
+  #取出第一個值,該值從陣列消失
+  mylist.pop(0)
+  
+  #排序
+  mylist.sort()
+  
+  #陣列反轉
+  mylist.reverse()
+  
+  #印前面2個元素
+  mylist[:2]
+  
+  #印陣列第2到最後
+  mylist[2:]
+  
+  #印倒數2個元素
+  mylist[-2:]
+  
+  ```
+  
+  練習
+  設計一個成績輸入的程式,學生成績輸入串列元素,如果輸入-1程式結束,並顯示總成績與平均
+  
+  ```sh
+  score=[]
+  total=inscore=0
+  while (inscore !=-1):
+      inscore=int(input("請輸入成績:"))
+      score.append(inscore)
+      
+  for i in score:
+     total=total+1
+  
+  average=total/ (len(score)-1)
+  
+  print('總成績:{} , 平均 {}',total,average)
+  
+  ```
+  
+  ### Tuple (元組)
   與List一樣,差異是immutable,只能取資料
+  優點效率好,保護資料
   
-  * ### Set
+  ```sh
+  #設值
+  mytuple=('A','B',1)
+  
+  #取值
+  mytuple[0]
+  
+  ```
+  
+  ### Set (集合)
   不重複的集合
   ```sh
   s=set()
+  
   s.add("A") #新增一集合
-  s.discard("A") #刪除某元素
+  
+  s.discard("A") #刪除某元素 不會throw error
+  
   s.remove("A")  #刪除某元素 不存在會throw error
+  
   s.union(t) 聯集2個set
+  
+  s.intersection(t)
+  
   ```
   
-  * ### Dictionary
+  ### Dictionary (字典)
+  由一組匹配的key跟value所組成的集合
+  ```sh
+ 
+  mydict=dic()
+  #直接設值
+  mydict={'name':'John','age':20,}
   
-This is [an example](http://example.com/ "Title") inline link.
-[android](https://dotblogs.com.tw/eggstudio/2017/07/19/085851)
+  #設值
+  mydic["name"]="John"
+  
+  #取值,若找不到會throw error
+  name=mydic["name"]
+  
+  #取值,若找不到會回傳None
+  name=mydic.get("name")
+  
+  #將key轉成list
+  mydictkeys=list(mydic.keys())
+  mydictvalues=list(mydic.values())
+ 
+  #清除字典
+  mydic.clear()
+
+  #印出字典內容
+  for key,value in mydic.items():
+      print("key:",key,"value:",value)
+
+ 
+  ```
 
