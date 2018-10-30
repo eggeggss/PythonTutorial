@@ -5,6 +5,7 @@ import random as rd
 import multiprocessing as mp
 from pyqtgraph.Qt import QtGui, QtCore
 import psutil
+
 time_serial=0
 last_time=0
 datas=dict()
@@ -13,20 +14,31 @@ N=100000
 #y軸
 datay=mp.Array('f',[0]*N)
 datay2=mp.Array('f',[0]*N)
-
+datay3=mp.Array('f',[0]*N)
 #x軸
 datax=mp.Array('f',[0]*N)
 
+
+def GetArdunioData():
+
+    xg=rd.randint(20,31)
+    yg=psutil.cpu_percent()
+    zg=psutil.virtual_memory().available/100000000 
+   
+    return (xg,yg,zg)
+
+#畫線
 def DrawLine():
     nx=np.array(datax)
     nx=nx * 0.01
 
     curve1.setData(x=nx,y=list(datay))    
     curve2.setData(x=nx,y=list(datay2))
+    curve3.setData(x=nx,y=list(datay3))
     
-
+#初始化pyqt套件
 def InvokeQt():
-    global time_serial,datas,curve1,curve2
+    global time_serial,datas,curve1,curve2,curve3
 
     try:
         #app=pg.mkQApp()
@@ -48,6 +60,7 @@ def InvokeQt():
 
         curve1=p.plot(pen='r',name='cpu rate')       
         curve2=p.plot(pen='g',name='memory')
+        curve3=p.plot(pen='b',name='Internet')
         
         timer=pg.QtCore.QTimer()
         timer.timeout.connect(DrawLine)
@@ -60,7 +73,10 @@ def InvokeQt():
     except Exception as e:
         print(e)
 
-def OutputData(datay,datax,datay2):
+
+#把ardunio的資料讀到陣列中
+#另一個process在做的事
+def OutputData(datay,datax,datay2,datay3):
 
     time_serial=0
     loop_serial=0
@@ -73,19 +89,23 @@ def OutputData(datay,datax,datay2):
         else:
            time_serial=time_serial+1         
         loop_serial=loop_serial+1
-
-        data=psutil.cpu_percent()
-        datay[time_serial]=data
+         
+        datas=GetArdunioData()
         
-        data2=psutil.virtual_memory().available/100000000      
-        datay2[time_serial]=data2
+        datay3[time_serial]=datas[0]
+        
+        #data=psutil.cpu_percent()
+        datay[time_serial]=datas[1]
+        
+        #data2=psutil.virtual_memory().available/100000000      
+        datay2[time_serial]=datas[2]
          #rd.randint(1,11)
 
         datax[time_serial]=loop_serial
 
 if __name__=='__main__':
     
-    p1=mp.Process(target=OutputData,args=(datay,datax,datay2))
+    p1=mp.Process(target=OutputData,args=(datay,datax,datay2,datay3,))
     p1.start()
     InvokeQt()
     p1.join()
