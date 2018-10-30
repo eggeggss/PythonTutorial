@@ -6,7 +6,7 @@ import multiprocessing as mp
 from pyqtgraph.Qt import QtGui, QtCore
 import psutil
 
-time_serial=0
+index=0
 last_time=0
 datas=dict()
 N=100000
@@ -21,7 +21,7 @@ datax=mp.Array('f',[0]*N)
 
 def GetArdunioData():
 
-    xg=rd.randint(20,31)
+    xg=rd.randint(40,51)
     yg=psutil.cpu_percent()
     zg=psutil.virtual_memory().available/100000000 
    
@@ -38,7 +38,7 @@ def DrawLine():
     
 #初始化pyqt套件
 def InvokeQt():
-    global time_serial,datas,curve1,curve2,curve3
+    global index,datas,curve1,curve2,curve3
 
     try:
         #app=pg.mkQApp()
@@ -58,7 +58,7 @@ def InvokeQt():
         p.setTitle('demo graph')
         p.addLegend()
 
-        curve1=p.plot(pen='r',name='cpu rate')       
+        curve1=p.plot(pen='#FFA54F',name='cpu rate')       
         curve2=p.plot(pen='g',name='memory')
         curve3=p.plot(pen='b',name='Internet')
         
@@ -78,30 +78,27 @@ def InvokeQt():
 #另一個process在做的事
 def OutputData(datay,datax,datay2,datay3):
 
-    time_serial=0
+    index=0
     loop_serial=0
     while True:
         #time.sleep(1)
         time.sleep(0.009)
+        #time.sleep(0.1)
 
-        if time_serial>=99999:
-           time_serial=0
+        if index>=99999:
+           index=0
         else:
-           time_serial=time_serial+1         
+           index=index+1  
+
         loop_serial=loop_serial+1
          
         datas=GetArdunioData()
         
-        datay3[time_serial]=datas[0]
+        datay3[index]=datas[0]
+        datay[index]=datas[1]
+        datay2[index]=datas[2]
         
-        #data=psutil.cpu_percent()
-        datay[time_serial]=datas[1]
-        
-        #data2=psutil.virtual_memory().available/100000000      
-        datay2[time_serial]=datas[2]
-         #rd.randint(1,11)
-
-        datax[time_serial]=loop_serial
+        datax[index]=loop_serial
 
 if __name__=='__main__':
     
@@ -110,4 +107,6 @@ if __name__=='__main__':
     InvokeQt()
     p1.join()
     
+    #print(psutil.net_io_counters(pernic=True, nowrap=True))
+    #print(psutil.net_io_counters(pernic=False, nowrap=True).bytes_recv/10000000)
     
