@@ -4,22 +4,29 @@ import time
 import random as rd
 import multiprocessing as mp
 from pyqtgraph.Qt import QtGui, QtCore
+import psutil
 time_serial=0
 last_time=0
 datas=dict()
-N=5000
-datay=mp.Array('i',[0]*N)
-datax=mp.Array('i',[0]*N)
+N=100000
 
-def plotData():
+#y軸
+datay=mp.Array('f',[0]*N)
+datay2=mp.Array('f',[0]*N)
+
+#x軸
+datax=mp.Array('f',[0]*N)
+
+def DrawLine():
     nx=np.array(datax)
-    nx=nx * 0.0001
+    nx=nx * 0.01
 
-    curve1.setData(x=nx,y=list(datay))
+    curve1.setData(x=nx,y=list(datay))    
+    curve2.setData(x=nx,y=list(datay2))
     
 
 def InvokeQt():
-    global time_serial,datas,curve1
+    global time_serial,datas,curve1,curve2
 
     try:
         #app=pg.mkQApp()
@@ -27,7 +34,8 @@ def InvokeQt():
 
         win=pg.GraphicsWindow()
         win.setWindowTitle('demo')
-        win.resize(800,400)
+        #win.resize(800,400)
+        win.setGeometry(100,10, 1200,400 ) 
 
         p=win.addPlot()
         p.showGrid(x=True, y=True)
@@ -36,12 +44,13 @@ def InvokeQt():
         p.setTitle('demo graph')
         p.addLegend()
 
-        curve1=p.plot(pen='r',name='y1')
+        curve1=p.plot(pen='r',name='cpu rate')       
+        curve2=p.plot(pen='g',name='memory')
         
         timer=pg.QtCore.QTimer()
-        timer.timeout.connect(plotData)
+        timer.timeout.connect(DrawLine)
         #1000是1秒
-        timer.start(500)
+        timer.start(1000)
         
         QtGui.QApplication.instance().exec_()
         #app.exec_()
@@ -49,26 +58,32 @@ def InvokeQt():
     except Exception as e:
         print(e)
 
-def OutputData(datay,datax):
+def OutputData(datay,datax,datay2):
 
     time_serial=0
     loop_serial=0
     while True:
-        time.sleep(0.001)
-        if time_serial>=4999:
+        #time.sleep(1)
+        time.sleep(0.01)
+
+        if time_serial>=99999:
            time_serial=0
         else:
            time_serial=time_serial+1         
         loop_serial=loop_serial+1
 
-        #
-        datay[time_serial]=rd.randint(1,1001)
+        data=psutil.cpu_percent()
+        datay[time_serial]=data
         
+        data2=psutil.virtual_memory().active/100000000      
+        datay2[time_serial]=data2
+         #rd.randint(1,11)
+
         datax[time_serial]=loop_serial
 
 if __name__=='__main__':
     
-    p1=mp.Process(target=OutputData,args=(datay,datax,))
+    p1=mp.Process(target=OutputData,args=(datay,datax,datay2))
 
     p1.start()
     InvokeQt()
