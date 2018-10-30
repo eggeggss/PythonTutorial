@@ -38,6 +38,8 @@ def InvokeQt():
         win.setGeometry(100,10, 1200,400 ) 
 
         p=win.addPlot()
+        p.setRange(yRange=[0,100])
+
         p.showGrid(x=True, y=True)
         p.setLabel(axis='left', text='x')
         p.setLabel(axis='bottom', text='y')
@@ -64,7 +66,7 @@ def OutputData(datay,datax,datay2):
     loop_serial=0
     while True:
         #time.sleep(1)
-        time.sleep(0.01)
+        time.sleep(0.009)
 
         if time_serial>=99999:
            time_serial=0
@@ -75,7 +77,7 @@ def OutputData(datay,datax,datay2):
         data=psutil.cpu_percent()
         datay[time_serial]=data
         
-        data2=psutil.virtual_memory().active/100000000      
+        data2=psutil.virtual_memory().available/100000000      
         datay2[time_serial]=data2
          #rd.randint(1,11)
 
@@ -84,7 +86,6 @@ def OutputData(datay,datax,datay2):
 if __name__=='__main__':
     
     p1=mp.Process(target=OutputData,args=(datay,datax,datay2))
-
     p1.start()
     InvokeQt()
     p1.join()
