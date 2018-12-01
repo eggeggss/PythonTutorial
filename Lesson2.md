@@ -98,7 +98,7 @@ Sum(b=2)
   * 套件(package)就是一堆模組(py)的集合,通常會把相似功能的模組收入一個套件
   * from 模組 import 函式或變數
   
-  參考5.python_module範例
+  參考2.python_module範例
   
 # (I)物件導向
 
