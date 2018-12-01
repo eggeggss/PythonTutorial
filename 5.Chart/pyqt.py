@@ -31,7 +31,7 @@ def plotData():
         x/1000
         y=list(datas.values())
         curve1.setData(x=x,y=y)
-               
+        print('x:',x,'y:',y)       
     datas[time_serial]=rd.randint(1,1001)
     
      

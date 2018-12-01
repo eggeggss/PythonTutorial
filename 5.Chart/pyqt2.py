@@ -3,6 +3,7 @@ import pyqtgraph as pg
 import time
 import random as rd
 import multiprocessing as mp
+from multiprocessing import Queue
 from pyqtgraph.Qt import QtGui, QtCore
 import psutil
 
@@ -17,7 +18,7 @@ datay2=mp.Array('f',[0]*N)
 datay3=mp.Array('f',[0]*N)
 #x軸
 datax=mp.Array('f',[0]*N)
-
+queue_list=list()
 
 def GetArdunioData():
 
@@ -29,9 +30,12 @@ def GetArdunioData():
 
 #畫線
 def DrawLine():
+    global queue_list
     nx=np.array(datax)
     nx=nx * 0.01
-
+    
+    #print (queue.get())
+    #curve2.setData(x=nx,y=queue_list)
     curve1.setData(x=nx,y=list(datay))    
     curve2.setData(x=nx,y=list(datay2))
     curve3.setData(x=nx,y=list(datay3))
@@ -51,7 +55,7 @@ def InvokeQt():
 
         p=win.addPlot()
         p.setRange(yRange=[0,100])
-
+        
         p.showGrid(x=True, y=True)
         p.setLabel(axis='left', text='x')
         p.setLabel(axis='bottom', text='y')
@@ -76,14 +80,14 @@ def InvokeQt():
 
 #把ardunio的資料讀到陣列中
 #另一個process在做的事
-def OutputData(datay,datax,datay2,datay3):
+def OutputData(datay,datax,datay2,datay3,l):
 
     index=0
     loop_serial=0
     while True:
         #time.sleep(1)
-        time.sleep(0.009)
-        #time.sleep(0.1)
+        #time.sleep(0.009)
+        time.sleep(0.1)
 
         if index>=99999:
            index=0
@@ -91,21 +95,26 @@ def OutputData(datay,datax,datay2,datay3):
            index=index+1  
 
         loop_serial=loop_serial+1
-         
+        l.acquire() 
         datas=GetArdunioData()
-        
+        l.release()
+
         datay3[index]=datas[0]
         datay[index]=datas[1]
         datay2[index]=datas[2]
         
         datax[index]=loop_serial
+        
+    
+        
 
 if __name__=='__main__':
     
-    p1=mp.Process(target=OutputData,args=(datay,datax,datay2,datay3,))
+    l=mp.Lock()
+    p1=mp.Process(target=OutputData,args=(datay,datax,datay2,datay3,l,))
     p1.start()
     InvokeQt()
-    p1.join()
+    #p1.join()
     
     #print(psutil.net_io_counters(pernic=True, nowrap=True))
     #print(psutil.net_io_counters(pernic=False, nowrap=True).bytes_recv/10000000)
